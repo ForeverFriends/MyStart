@@ -124,8 +124,7 @@ strace /usr/sbin/telnetd 2&>1 >/data/developer/trace.txt
 
 ### 提交
 
-```
-# git push origin local_dev:refs/for/remoute_dev
+```# git push origin local_dev:refs/for/remoute_dev
 git push origin os4.1.1_207_pad:refs/for/os4.1.1_207_pad
 ```
 
@@ -181,15 +180,48 @@ find -type f -name '*.cpp'|xargs grep -niw 'GroupRecord'
   dbus-send --session --print-reply=literal --dest=com.syberos.processmanager.session /com/syberos/processmanager/session com.syberos.processmanager.session.Interface.enablePingPong boolean:false
   ```
 
+- 自组网服务查询方法
+
+  ```
+  dbus-send --session --print-reply --dest=com.hg.zzwservice /com/hg/zzwservice com.hg.zzwservice.Interface.queryNetworkStatus
   
+  # 飞行模式
+  dbus-send --session --print-reply --dest=com.hg.zzwservice /com/hg/zzwservice com.hg.zzwservice.Interface.getFlyModeSwitchStatus
+  
+  dbus-send --session --print-reply --dest=com.hg.zzwservice /com/hg/zzwservice com.hg.zzwservice.Interface.queryAdhocModuleStatus
+  
+  #自检
+    dbus-send --session --print-reply --dest=com.hg.zzwservice /com/hg/zzwservice com.hg.zzwservice.Interface.getAdhocSelfCheckStatus
+  
+  ```
+  
+- dbus 发送信号
+  dbus-send --session --type=signal --print-reply --dest=com.syberos.zzwdbusserver "/com/syberos/zzwdbusserver" com.syberos.zzwdbusserver.Interface.textPropertyChanged
+
+- dbus 调用函数
+  dbus-send --session --type=method_call --print-reply --dest=com.syberos.zzwdbusserver "/com/syberos/zzwdbusserver" com.syberos.zzwdbusserver.Interface.textPropertyChanged
+
+- dbus 查看信号和方法注册详情
+  dbus-send --session --print-reply --dest=com.syberos.zzwdbusserver /com/syberos/zzwdbusserver org.freedesktop.DBus.Introspectable.Introspect
+
+- 查看名称
+  dbus-send --session --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.ListActivatableNames
+
+- 查看所有dbus的信息
+  dbus-send --session --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.ListNames
+
+
+
+  
+
 
 ## 命令行启动app
 
 sdk-invoker [time] sopid:appid:类型
 
-```
+  ```
 sdk-invoker 0 com.mycompany.SOS:SOS:uiapp
-```
+  ```
 
 ## 查看进程状态
 
@@ -330,35 +362,34 @@ QMAKE_LFLAGS += -Wl,-rpath-link=/data/app-libs/com.mycompany.myApp -Wl,-Bsymboli
 
 - 编译
 
-  ```
+```
   pdk 
   sb2 -t xxx -R
   qmake xxx.pro
   make
   buildpkg xxx.pro
-  ```
+```
 
 - 安装
 
-  ```
+```
   scp xxx.sop developer@192.168.100.100:/data/developer
   # 切换到install用户
   su install 
   sop -iu xxx.sop
-  ```
+```
 
 - 卸载
-
-  ```
+```
   su install
   ins-tool -rm com.syberos.eim
-  ```
+```
 
   
 
 ## 查看电池电量信息
 
-```
+  ```
 # /sys/class/power_supply/
 battery - 电池
 /sys/class/power_supply/battery/capacity
@@ -368,7 +399,7 @@ ac - DC口设备
 
 
 udevadm monitor #　查看event信息
-```
+  ```
 
 ## 默认壁纸存储位置
 
@@ -378,7 +409,7 @@ udevadm monitor #　查看event信息
 
 - 在 qt-base 工程中使用dbus获取confd中/data/systemdata/confd/syberos-confd.db　的数据
 
-  ```
+```
    QDBusMessage message = QDBusMessage::createMethodCall(
                   STORAGE_SERVICE,  "com.syberos.confd"
                   STORAGE_PATH,   "/confd"
@@ -388,7 +419,7 @@ udevadm monitor #　查看event信息
       "com.syberos.home"     "SYSTEM_HOME_WALLPAPER_URL"   "10"  "system"  
        QDBusReply<QVariantMap>reply = QDBusConnection::systemBus().call(message);
        
-  ```
+```
 
 - sqlite3
 
@@ -402,17 +433,17 @@ udevadm monitor #　查看event信息
   .database
   #如果要把查询输出到文件
   .output 文件名
-  
+
   ```
 
 
 
 ## 修改系统时间
 
-```
+  ```
 date -s 26/8/2020 
 date -s 14:41
-```
+  ```
 
 
 
@@ -451,6 +482,13 @@ cat /sys/device/system/cpu/cpu0/cpufreq/stats/time_in_state
 
 `resize2fs -f /dev/byname/syberfs`
 
+## 语音播报
+
+```
+#system 
+paplay /usr/tts/zzwcheckin.wav
+```
+
 
 
 # so easy
@@ -473,7 +511,7 @@ c++filt xxx
 
   窗口反复闪烁
 
-  ```
+```
   log:
   Recieve deactive message from PM
   Recieve active message from PM
@@ -482,7 +520,7 @@ c++filt xxx
   QWindow::show in
   QWindow::show out
   // 反复出现 active deactive
-  ```
+```
 
 - 多次触发RedayRead()且**ApplicationStatus** 为 PAUSE 
 
@@ -522,7 +560,7 @@ c++filt xxx
 
 - 在busybox.spec文件中增加 对应的**%package，%files**  路径应与 自动生成的 **busybox.links**  文件中对应的路径保持一致；
 
-  ``` 
+  ```
   #busybox.links
   /bin/gunzip
   /bin/gzip
@@ -565,15 +603,24 @@ c++filt xxx
 
 gerrite  UX6[/1CJ^
 
-## 配置hosts文件
+## 解析syberos相关域名
 
-```
+  ```
 199.232.68.133 raw.githubusercontent.com
 192.168.160.124 gerrit.insyber.com
 192.168.160.123 jenkins.insyber.com
 192.168.160.134 image2.insyber.com
 192.168.160.239 repo2.insyber.com
+192.168.160.120 obs.insyber.com
+
+
+# /etc/resolv.config
+nameserver 192.168.160.9
+  ```
+
+
+
+
 ```
 
-
-
+```
