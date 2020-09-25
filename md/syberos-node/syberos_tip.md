@@ -196,11 +196,24 @@ find -type f -name '*.cpp'|xargs grep -niw 'GroupRecord'
   ```
   
 - dbus 发送信号
+  
+```
   dbus-send --session --type=signal --print-reply --dest=com.syberos.zzwdbusserver "/com/syberos/zzwdbusserver" com.syberos.zzwdbusserver.Interface.textPropertyChanged
-
+  ```
+  
+  
+  
 - dbus 调用函数
+  
+``` 
   dbus-send --session --type=method_call --print-reply --dest=com.syberos.zzwdbusserver "/com/syberos/zzwdbusserver" com.syberos.zzwdbusserver.Interface.textPropertyChanged
-
+  
+  #  锁屏状态
+  dbus-send --system --type=method_call --print-reply --dest=com.syberos.user.authentication "/com/syberos/user/authentication" com.syberos.user.authentication.interface.getScreenState
+  ```
+  
+  
+  
 - dbus 查看信号和方法注册详情
   dbus-send --session --print-reply --dest=com.syberos.zzwdbusserver /com/syberos/zzwdbusserver org.freedesktop.DBus.Introspectable.Introspect
 
@@ -609,7 +622,7 @@ gerrite  UX6[/1CJ^
 199.232.68.133 raw.githubusercontent.com
 192.168.160.124 gerrit.insyber.com
 192.168.160.123 jenkins.insyber.com
-192.168.160.134 image2.insyber.com
+192.168.160.133 image2.insyber.com
 192.168.160.239 repo2.insyber.com
 192.168.160.120 obs.insyber.com
 
@@ -617,8 +630,6 @@ gerrite  UX6[/1CJ^
 # /etc/resolv.config
 nameserver 192.168.160.9
   ```
-
-
 
 
 ```
