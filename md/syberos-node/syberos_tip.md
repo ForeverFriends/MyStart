@@ -82,6 +82,8 @@ zypper mr -d  applications base hw mw nonbase qt soservice tools
 
 
 
+### 切换源（2-1）
+
 ```
 zypper ar http://repo2.insyber.com/syberos:/os2.1lts:/applications/standard_armv7tnhl/  applications_2   
 
@@ -98,6 +100,31 @@ zypper ar  http://repo2.insyber.com/syberos:/os2.1lts:/qt/standard_armv7tnhl/   
 zypper ar  http://repo2.insyber.com/syberos:/os2.1lts:/soservice/standard_armv7tnhl/    soservice_2
 
 zypper ar  http://repo2.insyber.com/syberos:/os2.1lts:/tools/standard_armv7tnhl/  tools_2
+
+
+zypper mr -d  applications base hw mw nonbase qt soservice tools
+```
+
+
+
+### 切换源（2-1-multimode)
+
+```
+zypper ar http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/applications/standard_armv7tnhl/  applications_2   
+
+zypper ar  http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/base/standard_armv7tnhl/         base_2
+
+zypper ar http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/hw/standard_armv7tnhl/        hw_2   
+
+zypper ar  http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/mw/standard_armv7tnhl/         mw_2
+
+zypper ar  http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/nonbase/standard_armv7tnhl/    nonbase_2
+
+zypper ar  http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/qt/standard_armv7tnhl/           qt_2
+
+zypper ar  http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/soservice/standard_armv7tnhl/    soservice_2
+
+zypper ar  http://repo2.insyber.com/syberos:/os2.1_lts_multimode:/tools/standard_armv7tnhl/  tools_2
 
 
 zypper mr -d  applications base hw mw nonbase qt soservice tools
@@ -199,10 +226,10 @@ find -type f -name '*.cpp'|xargs grep -niw 'GroupRecord'
   
 ```
   dbus-send --session --type=signal --print-reply --dest=com.syberos.zzwdbusserver "/com/syberos/zzwdbusserver" com.syberos.zzwdbusserver.Interface.textPropertyChanged
-  ```
+```
+
   
-  
-  
+
 - dbus 调用函数
   
 ``` 
@@ -210,18 +237,58 @@ find -type f -name '*.cpp'|xargs grep -niw 'GroupRecord'
   
   #  锁屏状态
   dbus-send --system --type=method_call --print-reply --dest=com.syberos.user.authentication "/com/syberos/user/authentication" com.syberos.user.authentication.interface.getScreenState
-  ```
+```
+
   
-  
-  
+
 - dbus 查看信号和方法注册详情
+  
+```
   dbus-send --session --print-reply --dest=com.syberos.zzwdbusserver /com/syberos/zzwdbusserver org.freedesktop.DBus.Introspectable.Introspect
+```
+
+  
 
 - 查看名称
+  
+```
   dbus-send --session --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.ListActivatableNames
+```
+
+  
 
 - 查看所有dbus的信息
+  
+  ```
   dbus-send --session --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.ListNames
+  ```
+  
+- 查看电池状态
+
+  ```
+    dbus-send --system --type=method_call --print-reply --dest=org.freedesktop.UPower "/org/freedesktop/UPower" org.freedesktop.UPower.property
+     dbus-send --system --type=method_call --print-reply --dest=org.freedesktop.UPower "/org/freedesktop/UPower" org.freedesktop.UPower.EnumerateDevices
+    dbus-send --system --type=method_call --print-reply --dest=org.freedesktop.UPower "/org/freedesktop/UPower/devices/line_power_ac" org.freedesktop.UPower.Device.GetStatistics
+    
+    
+    dbus-monitor --session \ "type='signal',interface='org.freedesktop.UPower.Device',member='DeviceChanged'"
+  
+  ```
+
+- 查看服务提供的接口
+
+  ```
+  dbus-send --system --type=method_call --print-reply --dest=com.syberos.myservice / org.freedesktop.DBus.Introspectable.Introspect
+  
+  dbus-send --system --type=method_call --print-reply --dest=org.freedesktop.UPower / org.freedesktop.DBus.Introspectable.Introspect
+  
+  dbus-send --system --type=method_call --print-reply --dest=org.freedesktop.UPower "/org/freedesktop/UPower" org.freedesktop.DBus.Introspectable.Introspect
+  
+  dbus-send --system --type=method_call --print-reply --dest=org.freedesktop.UPower "/org/freedesktop/UPower/devices/line_power_ac" org.freedesktop.DBus.Introspectable.Introspect
+  
+  ```
+
+  
 
 
 
@@ -504,6 +571,25 @@ paplay /usr/tts/zzwcheckin.wav
 
 
 
+
+
+## 5.0下编译
+
+```
+source build/envsetup.sh
+lunch
+make syberos-settings
+
+
+//////////////////
+mm -j4
+....
+
+sop: /workarea/lihao/SyberOS_5.0_S_P_sp9863a-509_devel/out/target/alpha_s9863a1h10_sharkl3/system/usr/apps
+```
+
+
+
 # so easy
 
 ##  查看未定义符号
@@ -625,6 +711,7 @@ gerrite  UX6[/1CJ^
 192.168.160.133 image2.insyber.com
 192.168.160.239 repo2.insyber.com
 192.168.160.120 obs.insyber.com
+192.168.11.30 sdk.insyber.com
 
 
 # /etc/resolv.config
