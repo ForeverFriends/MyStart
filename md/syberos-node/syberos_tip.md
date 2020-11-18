@@ -413,7 +413,7 @@ WAYLAND_DEBUG="1"
 
 .spec 文件中定义 %define debugs {nil}
 
-## 运行是找不到库
+## 引用第三方库
 
 - ldd MyApp      xxx=> not found
 - 将需要依赖的库安装到libs目录下
@@ -701,6 +701,8 @@ c++filt xxx
       
 
 gerrite  UX6[/1CJ^
+
+v2c-pu7gb-uf
 
 ## 解析syberos相关域名
 
