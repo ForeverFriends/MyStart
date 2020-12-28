@@ -9,6 +9,7 @@ for {set i 1} {$i < $argc} {incr i} {
     expect {
     "yes/no" { send "yes\r"; exp_continue}
     "password:" { send "system\r" }
+    "Password:" { send "system\r" }
     }
 }
 

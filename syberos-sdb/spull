@@ -9,6 +9,7 @@ spawn scp -r developer@192.168.100.100:$sPath .
 expect {
 "yes/no" { send "yes\r"; exp_continue}
 "password:" { send "system\r" }
+"Password:" { send "system\r" }
 }
 
 

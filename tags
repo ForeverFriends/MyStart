@@ -1,0 +1,281 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/054bee0/
+-	viminit/init.vim	/^noremap - Nzz$/;"	m
+-	viminit/vimrc	/^noremap - Nzz$/;"	m
+/etc/resolv.config	md/syberos-node/syberos_tip.md	/^# \/etc\/resolv.config$/;"	c
+/sys/class/power_supply/	md/syberos-node/syberos_tip.md	/^# \/sys\/class\/power_supply\/$/;"	c
+1.条形码	md/syberos-node/扫码应用.md	/^### 1.条形码$/;"	S
+2.二维码(QR码)	md/syberos-node/扫码应用.md	/^### 2.二维码(QR码)$/;"	S
+3.DataMatrix(DM码)	md/syberos-node/扫码应用.md	/^### 3.DataMatrix(DM码)$/;"	S
+4.PDF417	md/syberos-node/扫码应用.md	/^### 4.PDF417$/;"	S
+5.0下编译	md/syberos-node/syberos_tip.md	/^## 5.0下编译$/;"	s
+5.0代码同步	md/syberos-node/syberos_tip.md	/^## 5.0代码同步$/;"	s
+5.Aztec	md/syberos-node/扫码应用.md	/^### 5.Aztec$/;"	S
+;	viminit/init.vim	/^map ; :$/;"	m
+;	viminit/vimrc	/^map ; :$/;"	m
+<C-e>	viminit/init.vim	/^imap <C-e> <Plug>(coc-snippets-expand-jump)$/;"	m
+<C-e>	viminit/init.vim	/^vmap <C-e> <Plug>(coc-snippets-select)$/;"	m
+<C-e>	viminit/vimrc	/^imap <C-e> <Plug>(coc-snippets-expand-jump)$/;"	m
+<C-e>	viminit/vimrc	/^vmap <C-e> <Plug>(coc-snippets-select)$/;"	m
+<C-g>	viminit/init.vim	/^map <C-g> <C-]>i$/;"	m
+<C-l>	viminit/init.vim	/^imap <C-l> <Plug>(coc-snippets-expand)$/;"	m
+<C-l>	viminit/vimrc	/^imap <C-l> <Plug>(coc-snippets-expand)$/;"	m
+<LEADER>-	viminit/init.vim	/^nmap <silent> <LEADER>- <Plug>(coc-diagnostic-prev)$/;"	m
+<LEADER>-	viminit/vimrc	/^nmap <silent> <LEADER>- <Plug>(coc-diagnostic-prev)$/;"	m
+<LEADER><CR>	viminit/init.vim	/^noremap <LEADER><CR> :nohlsearch<CR>$/;"	m
+<LEADER><CR>	viminit/vimrc	/^noremap <LEADER><CR> :nohlsearch<CR>$/;"	m
+<LEADER>=	viminit/init.vim	/^nmap <silent> <LEADER>= <Plug>(coc-diagnostic-next)$/;"	m
+<LEADER>=	viminit/vimrc	/^nmap <silent> <LEADER>= <Plug>(coc-diagnostic-next)$/;"	m
+<LEADER>d	viminit/init.vim	/^nnoremap <silent><nowait> <LEADER>d :CocList diagnostics<cr>$/;"	m
+<LEADER>d	viminit/vimrc	/^nnoremap <silent><nowait> <LEADER>d :CocList diagnostics<cr>$/;"	m
+<LEADER>h	viminit/init.vim	/^map <LEADER>h <C-w>h$/;"	m
+<LEADER>h	viminit/vimrc	/^map <LEADER>h <C-w>h$/;"	m
+<LEADER>hh	viminit/init.vim	/^nnoremap <LEADER>hh :call Show_documentation()<CR>$/;"	m
+<LEADER>j	viminit/init.vim	/^map <LEADER>j <C-w>j$/;"	m
+<LEADER>j	viminit/vimrc	/^map <LEADER>j <C-w>j$/;"	m
+<LEADER>k	viminit/init.vim	/^map <LEADER>k <C-w>k$/;"	m
+<LEADER>k	viminit/vimrc	/^map <LEADER>k <C-w>k$/;"	m
+<LEADER>l	viminit/init.vim	/^map <LEADER>l <C-w>l$/;"	m
+<LEADER>l	viminit/vimrc	/^map <LEADER>l <C-w>l$/;"	m
+<LEADER>s	viminit/vimrc	/^nnoremap <LEADER>s :call Show_documentation()<CR>$/;"	m
+<LEADER>v	viminit/vimrc	/^noremap <LEADER>v :Vista coc<CR>$/;"	m
+<S-TAB>	viminit/init.vim	/^inoremap <expr><S-TAB> pumvisible() ? "\\<C-p>" : "\\<C-h>"$/;"	m
+<S-TAB>	viminit/vimrc	/^inoremap <expr><S-TAB> pumvisible() ? "\\<C-p>" : "\\<C-h>"$/;"	m
+<TAB>	viminit/init.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<TAB>	viminit/vimrc	/^inoremap <silent><expr> <TAB>$/;"	m
+<c-c>	viminit/init.vim	/^nnoremap <c-c> :CocCommand<CR>$/;"	m
+<c-c>	viminit/vimrc	/^nnoremap <c-c> :CocCommand<CR>$/;"	m
+<c-o>	viminit/init.vim	/^inoremap <silent><expr> <c-o> coc#refresh()$/;"	m
+<c-o>	viminit/vimrc	/^inoremap <silent><expr> <c-o> coc#refresh()$/;"	m
+<c-space>	viminit/init.vim	/^inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<c-space>	viminit/vimrc	/^inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<c-t>	viminit/vimrc	/^noremap <c-t> :silent! Vista finder coc<CR>$/;"	m
+<cr>	viminit/init.vim	/^inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<cr>	viminit/vimrc	/^inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<down>	viminit/init.vim	/^map <down> :res -5<CR>$/;"	m
+<down>	viminit/vimrc	/^map <down> :res -5<CR>$/;"	m
+<leader>a	viminit/init.vim	/^nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@$/;"	m
+<leader>a	viminit/init.vim	/^xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>$/;"	m
+<leader>a	viminit/vimrc	/^nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@$/;"	m
+<leader>a	viminit/vimrc	/^xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>$/;"	m
+<leader>rn	viminit/init.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<leader>rn	viminit/vimrc	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<leader>tl	viminit/init.vim	/^nnoremap <leader>tl :CocList todolist<CR>$/;"	m
+<leader>tl	viminit/vimrc	/^nnoremap <leader>tl :CocList todolist<CR>$/;"	m
+<leader>tn	viminit/init.vim	/^nnoremap <leader>tn :CocCommand todolist.create<CR>$/;"	m
+<leader>tn	viminit/vimrc	/^nnoremap <leader>tn :CocCommand todolist.create<CR>$/;"	m
+<leader>ts	viminit/init.vim	/^noremap <silent> <leader>ts :CocList tasks<CR>$/;"	m
+<leader>ts	viminit/vimrc	/^noremap <silent> <leader>ts :CocList tasks<CR>$/;"	m
+<leader>tu	viminit/init.vim	/^nnoremap <leader>tu :CocCommand todolist.download<CR>:CocCommand todolist.upload<CR>$/;"	m
+<leader>tu	viminit/vimrc	/^nnoremap <leader>tu :CocCommand todolist.download<CR>:CocCommand todolist.upload<CR>$/;"	m
+<left>	viminit/init.vim	/^map <left> :vertical resize-5<CR>$/;"	m
+<left>	viminit/vimrc	/^map <left> :vertical resize-5<CR>$/;"	m
+<right>	viminit/init.vim	/^map <right> :vertical resize+5<CR>$/;"	m
+<right>	viminit/vimrc	/^map <right> :vertical resize+5<CR>$/;"	m
+<space>y	viminit/init.vim	/^nnoremap <silent> <space>y :<C-u>CocList -A --normal yank<cr>$/;"	m
+<space>y	viminit/vimrc	/^nnoremap <silent> <space>y :<C-u>CocList -A --normal yank<cr>$/;"	m
+<up>	viminit/init.vim	/^map <up> :res +5<CR>$/;"	m
+<up>	viminit/vimrc	/^map <up> :res +5<CR>$/;"	m
+=	viminit/init.vim	/^noremap = nzz$/;"	m
+=	viminit/vimrc	/^noremap = nzz$/;"	m
+CPU信息	md/syberos-node/syberos_tip.md	/^## CPU信息$/;"	s
+DATA	get-pip.py	/^DATA = b"""$/;"	v
+DDbus调试	md/syberos-node/syberos_tip.md	/^## DDbus调试$/;"	s
+EOF	syberos-sdb/sinstall.sh	/^    expect <<EOF$/;"	h
+H	viminit/init.vim	/^noremap H 5h$/;"	m
+H	viminit/vimrc	/^noremap H 5h$/;"	m
+J	viminit/init.vim	/^noremap J 5j$/;"	m
+J	viminit/vimrc	/^noremap J 5j$/;"	m
+K	viminit/init.vim	/^noremap K 5k$/;"	m
+K	viminit/vimrc	/^noremap K 5k$/;"	m
+L	viminit/init.vim	/^noremap L 5l$/;"	m
+L	viminit/vimrc	/^noremap L 5l$/;"	m
+NERDTreeMapActivateNode	viminit/init.vim	/^let NERDTreeMapActivateNode = "i"$/;"	v
+NERDTreeMapActivateNode	viminit/vimrc	/^let NERDTreeMapActivateNode = "i"$/;"	v
+NERDTreeMapChangeRoot	viminit/init.vim	/^let NERDTreeMapChangeRoot = "y"$/;"	v
+NERDTreeMapChangeRoot	viminit/vimrc	/^let NERDTreeMapChangeRoot = "y"$/;"	v
+NERDTreeMapCloseDir	viminit/init.vim	/^let NERDTreeMapCloseDir = "n"$/;"	v
+NERDTreeMapCloseDir	viminit/vimrc	/^let NERDTreeMapCloseDir = "n"$/;"	v
+NERDTreeMapOpenExpl	viminit/init.vim	/^let NERDTreeMapOpenExpl = ""$/;"	v
+NERDTreeMapOpenExpl	viminit/vimrc	/^let NERDTreeMapOpenExpl = ""$/;"	v
+NERDTreeMapOpenInTab	viminit/init.vim	/^let NERDTreeMapOpenInTab = "o"$/;"	v
+NERDTreeMapOpenInTab	viminit/vimrc	/^let NERDTreeMapOpenInTab = "o"$/;"	v
+NERDTreeMapOpenSplit	viminit/init.vim	/^let NERDTreeMapOpenSplit = ""$/;"	v
+NERDTreeMapOpenSplit	viminit/vimrc	/^let NERDTreeMapOpenSplit = ""$/;"	v
+NERDTreeMapPreview	viminit/init.vim	/^let NERDTreeMapPreview = ""$/;"	v
+NERDTreeMapPreview	viminit/vimrc	/^let NERDTreeMapPreview = ""$/;"	v
+NERDTreeMapUpdir	viminit/init.vim	/^let NERDTreeMapUpdir = ""$/;"	v
+NERDTreeMapUpdir	viminit/vimrc	/^let NERDTreeMapUpdir = ""$/;"	v
+NERDTreeMapUpdirKeepOpen	viminit/init.vim	/^let NERDTreeMapUpdirKeepOpen = "l"$/;"	v
+NERDTreeMapUpdirKeepOpen	viminit/vimrc	/^let NERDTreeMapUpdirKeepOpen = "l"$/;"	v
+NERDTreeOpenVSplit	viminit/init.vim	/^let NERDTreeOpenVSplit = ""$/;"	v
+NERDTreeOpenVSplit	viminit/vimrc	/^let NERDTreeOpenVSplit = ""$/;"	v
+PY2	get-pip.py	/^PY2 = sys.version_info[0] == 2$/;"	v
+PY3	get-pip.py	/^PY3 = sys.version_info[0] == 3$/;"	v
+Q	viminit/init.vim	/^noremap Q :q<CR>$/;"	m
+Q	viminit/vimrc	/^noremap Q :q<CR>$/;"	m
+Qt事件系统及常见事件类型及应用	md/syberos-node/qt事件系统.md	/^# Qt事件系统及常见事件类型及应用$/;"	c
+R	viminit/init.vim	/^noremap R :source $MYVIMRC<CR>$/;"	m
+R	viminit/vimrc	/^noremap R :source $MYVIMRC<CR>$/;"	m
+S	viminit/init.vim	/^noremap S :w<CR>$/;"	m
+S	viminit/vimrc	/^noremap S :w<CR>$/;"	m
+Show_documentation	viminit/init.vim	/^function! Show_documentation()$/;"	f
+Show_documentation	viminit/vimrc	/^function! Show_documentation()$/;"	f
+_b85alphabet	get-pip.py	/^    _b85alphabet = (b"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"$/;"	v
+ac	viminit/init.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
+ac	viminit/init.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
+ac	viminit/vimrc	/^omap ac <Plug>(coc-classobj-a)$/;"	m
+ac	viminit/vimrc	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
+af	viminit/init.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+af	viminit/init.vim	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
+af	viminit/vimrc	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+af	viminit/vimrc	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
+b85decode	get-pip.py	/^    def b85decode(b):$/;"	f
+bootstrap	get-pip.py	/^def bootstrap(tmpdir=None):$/;"	f
+cert_parse_args	get-pip.py	/^    def cert_parse_args(self, args):$/;"	f	function:bootstrap	file:
+double free	md/syberos-node/syberos_tip.md	/^## double free$/;"	s
+duiy创建系统服务	md/syberos-node/创建系统服务.md	/^## duiy创建系统服务$/;"	s
+expect_dev	syberos-sdb/sinstall.sh	/^function expect_dev()$/;"	f
+expect_root_remount_install	syberos-sdb/sinstall.sh	/^function expect_root_remount_install()$/;"	f
+g:NERDTreeIndicatorMapCustom	viminit/init.vim	/^let g:NERDTreeIndicatorMapCustom = {$/;"	v
+g:NERDTreeIndicatorMapCustom	viminit/vimrc	/^let g:NERDTreeIndicatorMapCustom = {$/;"	v
+g:SignatureMap	viminit/init.vim	/^let g:SignatureMap = {$/;"	v
+g:SignatureMap	viminit/vimrc	/^let g:SignatureMap = {$/;"	v
+g:coc_global_extensions	viminit/init.vim	/^let g:coc_global_extensions = [$/;"	v
+g:coc_global_extensions	viminit/vimrc	/^let g:coc_global_extensions = [$/;"	v
+g:coc_snippet_next	viminit/init.vim	/^let g:coc_snippet_next = '<c-e>'$/;"	v
+g:coc_snippet_next	viminit/vimrc	/^let g:coc_snippet_next = '<c-e>'$/;"	v
+g:coc_snippet_prev	viminit/init.vim	/^let g:coc_snippet_prev = '<c-n>'$/;"	v
+g:coc_snippet_prev	viminit/vimrc	/^let g:coc_snippet_prev = '<c-n>'$/;"	v
+g:scrollstatus_size	viminit/vimrc	/^let g:scrollstatus_size = 15$/;"	v
+g:snips_author	viminit/init.vim	/^let g:snips_author = 'zyp'$/;"	v
+g:snips_author	viminit/vimrc	/^let g:snips_author = 'zyp'$/;"	v
+g:vista#renderer#enable_icon	viminit/vimrc	/^let g:vista#renderer#enable_icon = 1$/;"	v
+g:vista#renderer#icons	viminit/vimrc	/^let g:vista#renderer#icons = {$/;"	v
+g:vista_default_executive	viminit/vimrc	/^let g:vista_default_executive = 'ctags'$/;"	v
+g:vista_fzf_preview	viminit/vimrc	/^let g:vista_fzf_preview = ['right:50%']$/;"	v
+g:vista_icon_indent	viminit/vimrc	/^let g:vista_icon_indent = ["??? ", "??? "]$/;"	v
+gd	viminit/vimrc	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+git常用指令	md/syberos-node/syberos_tip.md	/^## git常用指令$/;"	s
+gn	viminit/init.vim	/^map gn ]`$/;"	m
+gn	viminit/vimrc	/^map gn ]`$/;"	m
+gp	viminit/init.vim	/^map gp [`$/;"	m
+gp	viminit/vimrc	/^map gp [`$/;"	m
+gr	viminit/init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gr	viminit/vimrc	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gy	viminit/init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+gy	viminit/vimrc	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+iterbytes	get-pip.py	/^    def iterbytes(buf):$/;"	f
+iterbytes	get-pip.py	/^    iterbytes = iter$/;"	v
+just do it	md/syberos-node/syberos_tip.md	/^# just do it$/;"	c
+kc	viminit/init.vim	/^omap kc <Plug>(coc-classobj-i)$/;"	m
+kc	viminit/init.vim	/^xmap kc <Plug>(coc-classobj-i)$/;"	m
+kc	viminit/vimrc	/^omap kc <Plug>(coc-classobj-i)$/;"	m
+kc	viminit/vimrc	/^xmap kc <Plug>(coc-classobj-i)$/;"	m
+kf	viminit/init.vim	/^omap kf <Plug>(coc-funcobj-i)$/;"	m
+kf	viminit/init.vim	/^xmap kf <Plug>(coc-funcobj-i)$/;"	m
+kf	viminit/vimrc	/^omap kf <Plug>(coc-funcobj-i)$/;"	m
+kf	viminit/vimrc	/^xmap kf <Plug>(coc-funcobj-i)$/;"	m
+main	get-pip.py	/^def main():$/;"	f
+mapleader	viminit/init.vim	/^let mapleader=" "$/;"	v
+mapleader	viminit/vimrc	/^let mapleader=" "$/;"	v
+others	md/syberos-node/syberos_tip.md	/^# others$/;"	c
+pip_entry_point	get-pip.py	/^    from pip._internal.cli.main import main as pip_entry_point$/;"	x	function:bootstrap	file:
+qml中槽函数链接不上c++中的信号	md/syberos-node/syberos_tip.md	/^## qml中槽函数链接不上c++中的信号$/;"	s
+rootfs下空间不足导致rpm安装失败	md/syberos-node/syberos_tip.md	/^## rootfs下空间不足导致rpm安装失败$/;"	s
+rpm编译未生成debugInfo	md/syberos-node/syberos_tip.md	/^## rpm编译未生成debugInfo$/;"	s
+s	viminit/init.vim	/^noremap s <nop>$/;"	m
+s	viminit/vimrc	/^noremap s <nop>$/;"	m
+s:check_back_space	viminit/init.vim	/^function! s:check_back_space() abort$/;"	f
+s:check_back_space	viminit/vimrc	/^function! s:check_back_space() abort$/;"	f
+s:cocActionsOpenFromSelected	viminit/init.vim	/^function! s:cocActionsOpenFromSelected(type) abort$/;"	f
+s:cocActionsOpenFromSelected	viminit/vimrc	/^function! s:cocActionsOpenFromSelected(type) abort$/;"	f
+sh	viminit/init.vim	/^map sh :set nosplitright<CR>:vsplit<CR>$/;"	m
+sh	viminit/init.vim	/^map sh <C-w>t<C-w>K$/;"	m
+sh	viminit/vimrc	/^map sh :set nosplitright<CR>:vsplit<CR>$/;"	m
+sh	viminit/vimrc	/^map sh <C-w>t<C-w>K$/;"	m
+sj	viminit/init.vim	/^map sj :set nosplitbelow<CR>:split<CR>$/;"	m
+sj	viminit/vimrc	/^map sj :set nosplitbelow<CR>:split<CR>$/;"	m
+sk	viminit/init.vim	/^map sk :set splitbelow<CR>:split<CR>$/;"	m
+sk	viminit/vimrc	/^map sk :set splitbelow<CR>:split<CR>$/;"	m
+sl	viminit/init.vim	/^map sl :set splitright<CR>:vsplit<CR>$/;"	m
+sl	viminit/vimrc	/^map sl :set splitright<CR>:vsplit<CR>$/;"	m
+so easy	md/syberos-node/syberos_tip.md	/^# so easy$/;"	c
+so so easy	md/syberos-node/syberos_tip.md	/^# so so easy$/;"	c
+strace	md/syberos-node/syberos_tip.md	/^## strace$/;"	s
+sv	viminit/init.vim	/^map sv <C-w>t<C-w>H$/;"	m
+sv	viminit/vimrc	/^map sv <C-w>t<C-w>H$/;"	m
+th	viminit/init.vim	/^map th :-tabnext<CR>$/;"	m
+th	viminit/vimrc	/^map th :-tabnext<CR>$/;"	m
+tl	viminit/init.vim	/^map tl :+tabnext<CR>$/;"	m
+tl	viminit/vimrc	/^map tl :+tabnext<CR>$/;"	m
+tn	viminit/init.vim	/^map tn :tabe<CR>$/;"	m
+tn	viminit/vimrc	/^map tn :tabe<CR>$/;"	m
+ts	viminit/init.vim	/^nmap ts <Plug>(coc-translator-p)$/;"	m
+ts	viminit/vimrc	/^nmap ts <Plug>(coc-translator-p)$/;"	m
+tt	viminit/init.vim	/^map tt :NERDTreeToggle<CR>$/;"	m
+tt	viminit/init.vim	/^nmap tt :CocCommand explorer<CR>$/;"	m
+tt	viminit/vimrc	/^map tt :NERDTreeToggle<CR>$/;"	m
+tt	viminit/vimrc	/^nmap tt :CocCommand explorer<CR>$/;"	m
+vmware扩容	md/syberos-node/syberos_tip.md	/^## vmware扩容$/;"	s
+zypper指令	md/syberos-node/syberos_tip.md	/^## zypper指令$/;"	s
+一、grep	md/base.md	/^## 一、grep$/;"	s
+一、常见码图	md/syberos-node/扫码应用.md	/^## 一、常见码图$/;"	s
+事件产生	md/syberos-node/qt事件系统.md	/^#### 事件产生$/;"	t
+事件循环	md/syberos-node/qt事件系统.md	/^## 事件循环$/;"	s
+事件系统组成	md/syberos-node/qt事件系统.md	/^## 事件系统组成$/;"	s
+二、ZXing for C++ code	md/syberos-node/扫码应用.md	/^## 二、ZXing for C++ code$/;"	s
+什么是事件	md/syberos-node/qt事件系统.md	/^## 什么是事件$/;"	s
+使用rpm编译busybox	md/syberos-node/syberos_tip.md	/^## 使用rpm编译busybox$/;"	s
+修改系统时间	md/syberos-node/syberos_tip.md	/^## 修改系统时间$/;"	s
+元心app异常退出原因查询	md/syberos-node/syberos_tip.md	/^## 元心app异常退出原因查询$/;"	s
+元心应用开机自启动	md/syberos-node/syberos_tip.md	/^## 元心应用开机自启动$/;"	s
+关闭元心设备防火墙	md/syberos-node/syberos_tip.md	/^## 关闭元心设备防火墙$/;"	s
+关闭电脑关盖睡眠功能	md/syberos-node/syberos_tip.md	/^## 关闭电脑关盖睡眠功能$/;"	s
+关闭盖子不处理	md/syberos-node/syberos_tip.md	/^### 关闭盖子不处理$/;"	S
+再也不用担心找不到XXX	md/syberos-node/syberos_tip.md	/^## 再也不用担心找不到XXX$/;"	s
+分发	md/syberos-node/qt事件系统.md	/^#### 分发$/;"	t
+切换源（2-1-multimode)	md/syberos-node/syberos_tip.md	/^### 切换源（2-1-multimode)$/;"	S
+切换源（2-1）	md/syberos-node/syberos_tip.md	/^### 切换源（2-1）$/;"	S
+切换源（4-1）	md/syberos-node/syberos_tip.md	/^### 切换源（4-1）$/;"	S
+刷新	md/syberos-node/syberos_tip.md	/^### 刷新$/;"	S
+卸载sop应用程序	md/syberos-node/syberos_tip.md	/^## 卸载sop应用程序$/;"	s
+发送	md/syberos-node/qt事件系统.md	/^#### 发送$/;"	t
+命令行启动app	md/syberos-node/syberos_tip.md	/^## 命令行启动app$/;"	s
+处理	md/syberos-node/qt事件系统.md	/^#### 处理$/;"	t
+存储信息	md/syberos-node/syberos_tip.md	/^## 存储信息$/;"	s
+安装	md/syberos-node/syberos_tip.md	/^### 安装$/;"	S
+安装微信	md/syberos-node/syberos_tip.md	/^## 安装微信$/;"	s
+安装配置环境	md/syberos-node/syberos_tip.md	/^# 安装配置环境$/;"	c
+常见事件类型	md/syberos-node/qt事件系统.md	/^## 常见事件类型$/;"	s
+应用实例	md/syberos-node/qt事件系统.md	/^## 应用实例$/;"	s
+开启wayland日志	md/syberos-node/syberos_tip.md	/^## 开启wayland日志$/;"	s
+引用第三方库	md/syberos-node/syberos_tip.md	/^## 引用第三方库$/;"	s
+手动编译sop包及安装	md/syberos-node/syberos_tip.md	/^## 手动编译sop包及安装$/;"	s
+打印内核日志	md/syberos-node/syberos_tip.md	/^## 打印内核日志$/;"	s
+扫码应用	md/syberos-node/扫码应用.md	/^# 扫码应用$/;"	c
+找不到系统库	md/syberos-node/syberos_tip.md	/^## 找不到系统库$/;"	s
+提交	md/syberos-node/syberos_tip.md	/^### 提交$/;"	S
+播放MP4缺少gstreamer插件	md/syberos-node/syberos_tip.md	/^## 播放MP4缺少gstreamer插件$/;"	s
+操作RPM	md/syberos-node/syberos_tip.md	/^## 操作RPM$/;"	s
+查找	md/syberos-node/syberos_tip.md	/^## 查找$/;"	s
+查找文件	md/syberos-node/syberos_tip.md	/^### 查找文件$/;"	S
+查看DBus	md/syberos-node/syberos_tip.md	/^## 查看DBus$/;"	s
+查看元心os的qt版本号	md/syberos-node/syberos_tip.md	/^## 查看元心os的qt版本号$/;"	s
+查看按键等系统事件	md/syberos-node/syberos_tip.md	/^## 查看按键等系统事件$/;"	s
+查看未定义符号	md/syberos-node/syberos_tip.md	/^##  查看未定义符号$/;"	s
+查看电池电量信息	md/syberos-node/syberos_tip.md	/^## 查看电池电量信息$/;"	s
+查看软件源	md/syberos-node/syberos_tip.md	/^### 查看软件源$/;"	S
+查看进程状态	md/syberos-node/syberos_tip.md	/^## 查看进程状态$/;"	s
+窗口反复show in show out	md/syberos-node/syberos_tip.md	/^## 窗口反复show in show out$/;"	s
+解析syberos相关域名	md/syberos-node/syberos_tip.md	/^## 解析syberos相关域名$/;"	s
+设置系统分辨率	md/syberos-node/syberos_tip.md	/^## 设置系统分辨率$/;"	s
+语音播报	md/syberos-node/syberos_tip.md	/^## 语音播报$/;"	s
+连接元心设备	md/syberos-node/syberos_tip.md	/^## 连接元心设备$/;"	s
+链接虚拟设备	md/syberos-node/syberos_tip.md	/^## 链接虚拟设备$/;"	s
+默认壁纸存储位置	md/syberos-node/syberos_tip.md	/^## 默认壁纸存储位置$/;"	s
